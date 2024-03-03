@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyB_BTjLf3ZCy_sn4oNxdvXt0dXb_KX5bU4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>580724856781</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.becoder.portfolio</string>
+	<key>PROJECT_ID</key>
+	<string>portfolio-fb31e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>portfolio-fb31e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:580724856781:ios:ba7aba67bc90a57f9a9684</string>
+</dict>
+</plist>

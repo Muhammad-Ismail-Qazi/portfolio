@@ -1,0 +1,32 @@
+name: portfolio
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.6
+  get: 4.6.6
+  sizer: 2.0.15
+  avatar_glow: 3.0.1
+  google_fonts: 6.1.0
+  font_awesome_flutter: 10.7.0
+  animated_text_kit: 4.2.2
+  url_launcher: 6.2.5
+  syncfusion_flutter_pdfviewer: ^24.2.8
+  firebase_core: 2.25.5
+  cloud_firestore: 4.15.6
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^3.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/
+  uses-material-design: true
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580724856781",
+    "project_id": "portfolio-fb31e",
+    "storage_bucket": "portfolio-fb31e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580724856781:android:c3c4778a96c9633a9a9684",
+        "android_client_info": {
+          "package_name": "com.becoder.portfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi_3g-AdXDdieb1IxoxA4fByTXCPA5Ihs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
