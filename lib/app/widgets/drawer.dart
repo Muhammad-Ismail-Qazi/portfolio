@@ -31,6 +31,10 @@ class CustomDrawer extends StatelessWidget {
               leading: const Icon(Icons.contact_mail),
               title: const Text('Contact'),
               onTap: () => Get.toNamed('/contact')),
+          ListTile(
+              leading: const Icon(Icons.details),
+              title: const Text('Request'),
+              onTap: () => Get.toNamed('/view-details')),
         ],
       ),
     );

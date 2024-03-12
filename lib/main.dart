@@ -16,6 +16,7 @@ void main() async {
       builder: (context, orientation, deviceType) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
+          drawerTheme: const DrawerThemeData(backgroundColor: Colors.black),
           primaryColor: Colors.black,
         ),
         title: "Portfolio",

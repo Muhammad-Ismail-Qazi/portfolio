@@ -2,16 +2,18 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:get/get.dart';
 
-import 'package:portfolio/app/modules/about/bindings/about_binding.dart';
-import 'package:portfolio/app/modules/about/views/about_view.dart';
-import 'package:portfolio/app/modules/contact/bindings/contact_binding.dart';
-import 'package:portfolio/app/modules/contact/views/contact_view.dart';
-import 'package:portfolio/app/modules/cv/bindings/cv_binding.dart';
-import 'package:portfolio/app/modules/cv/views/cv_view.dart';
-import 'package:portfolio/app/modules/home/bindings/home_binding.dart';
-import 'package:portfolio/app/modules/home/views/home_view.dart';
-import 'package:portfolio/app/modules/projects/bindings/projects_binding.dart';
-import 'package:portfolio/app/modules/projects/views/projects_view.dart';
+import '../modules/about/bindings/about_binding.dart';
+import '../modules/about/views/about_view.dart';
+import '../modules/contact/bindings/contact_binding.dart';
+import '../modules/contact/views/contact_view.dart';
+import '../modules/cv/bindings/cv_binding.dart';
+import '../modules/cv/views/cv_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
+import '../modules/projects/bindings/projects_binding.dart';
+import '../modules/projects/views/projects_view.dart';
+import '../modules/view details/bindings/view_details_binding.dart';
+import '../modules/view details/views/view_details_view.dart';
 
 part 'app_routes.dart';
 
@@ -48,6 +50,11 @@ class AppPages {
       name: _Paths.PROJECTS,
       page: () => const ProjectsView(),
       binding: ProjectsBinding(),
+    ),
+    GetPage(
+      name: _Paths.VIEW_DETAILS,
+      page: () => const ViewDetailsView(),
+      binding: ViewDetailsBinding(),
     ),
   ];
 }
