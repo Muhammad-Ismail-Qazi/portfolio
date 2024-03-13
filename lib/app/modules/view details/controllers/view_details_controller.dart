@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
 class ViewDetailsController extends GetxController {
@@ -18,5 +19,7 @@ class ViewDetailsController extends GetxController {
     super.onClose();
   }
 
-  getData() async {}
+  Stream<QuerySnapshot<Map<String, dynamic>>> getData() {
+    return FirebaseFirestore.instance.collection('contact').snapshots();
+  }
 }

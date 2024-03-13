@@ -4,25 +4,28 @@ class ContactModel {
   late String phone;
   late String description;
 
-  ContactModel(this.name, this.email, this.phone, this.description);
+  ContactModel({
+    required this.name,
+    required this.email,
+    required this.phone,
+    required this.description,
+  });
 
   Map<String, dynamic> toMap() {
     return {
-      'name': this.name,
-      'email': this.email,
-      'phone': this.phone,
-      'description': this.description,
+      'name': name,
+      'email': email,
+      'phone': phone,
+      'description': description,
     };
   }
 
-  ContactModel.fromMap(Map<String, dynamic> map) {
-    name:
-    map['name'];
-    email:
-    map['email'];
-    phone:
-    map['phone'];
-    description:
-    map['description'];
+  factory ContactModel.fromMap(Map<String, dynamic> map) {
+    return ContactModel(
+      name: map['name'] ?? '',
+      email: map['email'] ?? '',
+      phone: map['phone'] ?? '',
+      description: map['description'] ?? '',
+    );
   }
 }

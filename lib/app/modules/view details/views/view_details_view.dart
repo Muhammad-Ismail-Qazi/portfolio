@@ -19,8 +19,7 @@ class ViewDetailsView extends GetView<ViewDetailsController> {
         children: [
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
-              stream:
-                  FirebaseFirestore.instance.collection('contact').snapshots(),
+              stream: controller.getData(),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return const Center(child: CircularProgressIndicator());

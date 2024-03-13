@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +11,12 @@ class ContactController extends GetxController {
   late TextEditingController phoneController;
   late TextEditingController descriptionController;
 
-  late ContactModel contactModel;
+  ContactModel contactModel = ContactModel(
+    name: '',
+    email: '',
+    phone: '',
+    description: '',
+  );
 
   @override
   void onInit() {
@@ -21,8 +25,6 @@ class ContactController extends GetxController {
     emailController = TextEditingController();
     phoneController = TextEditingController();
     descriptionController = TextEditingController();
-    contactModel = ContactModel(
-        "", "", "", ""); // Initialize ContactModel with default values
   }
 
   @override
@@ -36,20 +38,18 @@ class ContactController extends GetxController {
 
   Future<void> sendData() async {
     contactModel = ContactModel(
-      nameController.text,
-      emailController.text,
-      phoneController.text,
-      descriptionController.text,
+      name: nameController.text,
+      email: emailController.text,
+      phone: phoneController.text,
+      description: descriptionController.text,
     );
 
     try {
-      await contactCollection.doc().set(contactModel.toMap());
-      Get.snackbar("Success", "You request is send successfully");
+      await contactCollection.add(contactModel.toMap());
+      Get.snackbar("Success", "Your request has been sent successfully");
     } catch (error) {
       Get.snackbar('Error', error.toString());
-      if (kDebugMode) {
-        print(error);
-      }
+      debugPrint(error.toString());
     }
   }
 }
